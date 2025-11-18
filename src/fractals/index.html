@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../project.css">
+</head>
+
+<body>
+
+    <div id="scrollbar-container">
+        <div id="scrollbar-bg"></div>
+    </div>
+
+    <div class="border">
+        <nav>
+            <div class="traffic">
+                <div class="t1"></div>
+                <div class="t2"></div>
+                <div class="t3"></div>
+            </div>
+
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../contact/index.html">Contact</a>
+            </div>
+
+            <div class="functions">
+                <button onclick="toggleFullscreen()">⛶</button>
+            </div>
+        </nav>
+
+        <section class="project-section">
+            <div class="header">
+                <h1>Fractal Generator</h1>
+                <p>This is an interactive fractal generator that visualizes complex-plane functions in real time. Users can explore a huge variety of fractals by adjusting parameters like Z, C, exponent values, iteration depth, and zoom level.</p>
+            </div>
+
+
+            <div class="row">
+                <img src="../assets/projects/p2/p1.png">
+                <div>
+                    <h1>Goals</h1>
+                    <p>I wanted to build a tool that makes fractals feel approachable, while still having mathematical flexibility. I wanted to support real-time rendering, smooth zooming, and custom formulas so users could discover patterns.</p>
+                </div>
+            </div>
+
+            <div class="seperator"></div>
+        </section>
+
+        <section class="project-roles">
+            <div class="row mt">
+                <div>
+                    <h1>Roles</h1>
+                    <p>I implemented everything myself, including the complex-number math, the rendering engine, and the performance optimizations.</p>
+                </div>
+                <img src="../assets/projects/p2/p2.png">
+            </div>
+
+            <div class="row">
+                <img src="../assets/projects/p2/p3.png">
+                <div>
+                    <h1>Process</h1>
+                    <p>The project began as a basic complex-plane renderer, but quickly grew into a full parameterized engine. Much of the process focused on the escape-time algorithm and a canvas that could handle loops and zooms.</p>
+                </div>
+            </div>
+
+            <div class="seperator"></div>
+
+        </section>
+
+        <section class="outcome">
+            <h1>Outcome</h1>
+            <p>The generator produces a wide range of beautiful fractals, and users can tweak the parameters freely to create new fractals. It runs smoothly in the browser, and you can create some of the most popular fractals such as the Mandelbrot set, Julia set, and the burning ship.</p>
+            <img src="../assets/projects/p2/p4.png">
+        </section>
+
+        <footer>
+            <span>Michael Leix</span>
+            <span>(385)-391-6848</span>
+            <span>Michaelleix@mail.weber.edu</span>
+        </footer>
+    </div>
+</body>
+
+<script src="../index.js"></script>
+
+</html>

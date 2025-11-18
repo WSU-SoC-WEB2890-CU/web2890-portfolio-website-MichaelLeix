@@ -1,0 +1,81 @@
+:root {
+    --fg-1: #86848E;
+    --fg-2: #575662;
+    --fg-3: #3B3953;
+    --fg-4: #161528;
+    --bg-1: #F4F1EB;
+    --bg-2: #E2DED7;
+    --bg-3: #CAC6BE;
+    --bg-4: #C0BBB3;
+    --bg-5: #A5A199;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 5em;
+    border-bottom: 2px solid var(--fg-4);
+    margin-bottom: 1rem;
+    padding: 0 0.5em;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--fg-4);
+}
+
+.row {
+    display: flex;
+    width: 70%;
+    margin-bottom: 2em;
+}
+
+.row p {
+    font-size: 1.5em;
+    font-family: 'Maple Mono', monospace;
+}
+
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0.7) 90%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0.7) 90%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 0;
+}
+
+.about > * {
+    position: relative;
+    z-index: 1;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+    padding-bottom: 5em;
+}

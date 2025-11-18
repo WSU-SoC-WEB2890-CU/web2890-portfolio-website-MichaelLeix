@@ -1,0 +1,143 @@
+:root {
+    --fg-1: #86848E;
+    --fg-2: #575662;
+    --fg-3: #3B3953;
+    --fg-4: #161528;
+    --bg-1: #F4F1EB;
+    --bg-2: #E2DED7;
+    --bg-3: #CAC6BE;
+    --bg-4: #C0BBB3;
+    --bg-5: #A5A199;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-section, .project-roles {
+    position: relative;
+    border-bottom: 2px solid var(--fg-4);
+}
+
+.project-section::before, .outcome::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0.7) 90%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0.7) 90%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 0;
+}
+
+.project-section > *, .outcome > * {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 5em;
+    border-bottom: 2px solid var(--fg-4);
+    padding: 0 0.5em;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Maple Mono', monospace;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin-bottom: 3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.row div h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.row div p {
+    text-align: center;
+}
+
+.row div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row img {
+    border-radius: 1em;
+    border: 2px solid var(--fg-4);
+    object-fit: cover;
+    background-size: 100%;
+    width: 40%;
+}
+
+.mt {
+    margin-top: 3rem;
+}
+
+.project-roles {
+    justify-content: center;
+    align-items: center;
+}
+
+.project-roles .row {
+    margin: 3rem 0;
+}
+
+.outcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 3rem;
+}
+
+.outcome p {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.outcome img {
+    width: 80%;
+    border-radius: 1em;
+}

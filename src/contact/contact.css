@@ -1,0 +1,154 @@
+:root {
+    --fg-1: #86848E;
+    --fg-2: #575662;
+    --fg-3: #3B3953;
+    --fg-4: #161528;
+    --bg-1: #F4F1EB;
+    --bg-2: #E2DED7;
+    --bg-3: #CAC6BE;
+    --bg-4: #C0BBB3;
+    --bg-5: #A5A199;
+}
+
+.contact-section {
+    position: relative;
+    padding: 4em 0 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    overflow: hidden;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    mask-image: linear-gradient(
+        to right,
+        black 0%,
+        black 10%,
+        rgba(0,0,0,0.2) 40%,
+        rgba(0,0,0,0.2) 60%,
+        black 90%,
+        black 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        black 0%,
+        black 10%,
+        rgba(0,0,0,0.2) 40%,
+        rgba(0,0,0,0.2) 60%,
+        black 90%,
+        black 100%
+    );
+    z-index: 0;
+}
+
+.contact-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    width: min(700px, 90%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header h1 {
+    font-size: 4em;
+    margin: 0;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid var(--fg-4);
+    font-family: 'Courgette', cursive;
+    color: var(--fg-4);
+}
+
+.header p {
+    font-size: 1.4em;
+    font-family: 'Maple Mono', monospace;
+    color: var(--fg-3);
+    margin: 0;
+}
+
+form {
+    width: min(600px, 90%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+form .row {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form .row label {
+    flex: 1;
+    min-width: 0;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em 0.5em;
+    border: 2px solid var(--fg-4);
+    border-radius: 1em;
+    font-family: 'Maple Mono', monospace;
+    font-size: 1em;
+    color: var(--fg-4);
+    background: white;
+    box-sizing: border-box;
+}
+
+form textarea {
+    min-height: 240px;
+    resize: vertical;
+}
+
+@media (max-width: 700px) {
+    form .row {
+        flex-direction: column;
+    }
+}
+
+form button {
+    padding: 0.7em 1.2em;
+    border: 2px solid var(--fg-4);
+    border-radius: 1em;
+    background: var(--fg-4);
+    color: white;
+    font-family: 'Maple Mono', monospace;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+}
+
+form button:hover {
+    background: var(--fg-3);
+    border-color: var(--fg-3);
+}
+
+form button:active {
+    transform: scale(0.97);
+}
