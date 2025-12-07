@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../project.css">
+</head>
+
+<body>
+
+    <div id="scrollbar-container">
+        <div id="scrollbar-bg"></div>
+    </div>
+
+    <div class="border">
+        <nav>
+            <div class="traffic">
+                <div class="t1"></div>
+                <div class="t2"></div>
+                <div class="t3"></div>
+            </div>
+
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../contact/index.html">Contact</a>
+            </div>
+
+            <div class="functions">
+                <button onclick="toggleFullscreen()">⛶</button>
+            </div>
+        </nav>
+
+        <section class="project-section">
+            <div class="header">
+                <h1>Note Engine</h1>
+                <p>This project is a lightweight note-taking engine built on top of a markdown library. It supports live rendering, multiple editable pages, images, KaTeX rendering, tables, and automatic saving through localStorage.</p>
+            </div>
+
+
+            <div class="row">
+                <img src="../assets/projects/p3/p1.png">
+                <div>
+                    <h1>Goals</h1>
+                    <p>I wanted to make a simple tool for writing down ideas without relying on a full markdown IDE. My goal was to support the core features I use most, quick formatting, math, images, and multiple pages.</p>
+                </div>
+            </div>
+
+            <div class="seperator"></div>
+        </section>
+
+        <section class="project-roles">
+            <div class="row mt">
+                <div>
+                    <h1>Roles</h1>
+                    <p>I built the entire system myself, wiring together the markdown library, designing the layout, and implementing features like page management, and autosaving.</p>
+                </div>
+                <img src="../assets/projects/p3/p2.png">
+            </div>
+
+            <div class="row">
+                <img src="../assets/projects/p3/p3.png">
+                <div>
+                    <h1>Process</h1>
+                    <p>The engine started as a basic one-page textarea. I connected a markdown engine, I integrated KaTeX, added support for images and tables, and extended it to multiple pages.</p>
+                </div>
+            </div>
+
+            <div class="seperator"></div>
+
+        </section>
+
+        <section class="outcome">
+            <h1>Outcome</h1>
+            <p>IThe final tool is a compact, browser-based markdown journal with live formatting, math support, and persistent storage. It's simple, fast, and lightweight.</p>
+                <img src="../assets/projects/p3/p2.png">
+        </section>
+
+        <footer>
+            <span>Michael Leix</span>
+            <span>(385)-391-6848</span>
+            <span>Michaelleix@mail.weber.edu</span>
+        </footer>
+    </div>
+</body>
+
+<script src="../index.js"></script>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../project.css">
+</head>
+
+<body>
+
+    <div id="scrollbar-container">
+        <div id="scrollbar-bg"></div>
+    </div>
+
+    <div class="border">
+        <nav>
+            <div class="traffic">
+                <div class="t1"></div>
+                <div class="t2"></div>
+                <div class="t3"></div>
+            </div>
+
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../contact/index.html">Contact</a>
+            </div>
+
+            <div class="functions">
+                <button onclick="toggleFullscreen()">⛶</button>
+            </div>
+        </nav>
+
+        <section class="project-section">
+            <div class="header">
+                <h1>Automata</h1>
+                <p>This project is an interactive automata simulator built for the browser. It lets users experiment with emergent behavior, custom rulesets, and realtime visualization.</p>
+            </div>
+
+
+            <div class="row">
+                <img src="../assets/projects/p5/p1.png">
+                <div>
+                    <h1>Goals</h1>
+                    <p>I wanted to explore emergent systems and build a simulation engine that runs smoothly in the browser. My goal was to support custom rules, thousands of entities, and a fast renderer.</p>
+                </div>
+            </div>
+
+            <div class="seperator"></div>
+        </section>
+
+        <section class="project-roles">
+            <div class="row mt">
+                <div>
+                    <h1>Roles</h1>
+                    <p>I designed and programmed the entire system from scratch, including the rule parser, rendering engine, and UI. The simulation logic and render optimizations where made from scratch.</p>
+                </div>
+                <img src="../assets/projects/p5/p2.png">
+            </div>
+
+            <div class="row">
+                <img src="../assets/projects/p5/p3.png">
+                <div>
+                    <h1>Process</h1>
+                    <p>The project evolved through several prototypes, and expanded into a modular rendering engine. Most time was spent optimizing the canvas updates and creating a renderer that could handle large worlds without slowing down.</p>
+                </div>
+            </div>
+
+            <div class="seperator"></div>
+
+        </section>
+
+        <section class="outcome">
+            <h1>Outcome</h1>
+            <p>The simulator runs efficiently even with huge grids, and supports custom rules. It's become a great sandbox for testing ideas and visualizing complex systems.</p>
+                <img src="../assets/projects/p5/p4.png">
+        </section>
+
+        <footer>
+            <span>Michael Leix</span>
+            <span>(385)-391-6848</span>
+            <span>Michaelleix@mail.weber.edu</span>
+        </footer>
+    </div>
+</body>
+
+<script src="../index.js"></script>
+
+</html>

@@ -1,28 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>Portfolio website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
-
-  <link rel="stylesheet" href="./stylesheets/main.scss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
 
-  <script type="module" src="./javascripts/main.js"></script>
+	<div id="scrollbar-container">
+		<div id="scrollbar-bg"></div>
+	</div>
+
+    <div class="border">
+        <nav>
+            <div class="traffic">
+                <div class="t1"></div>
+                <div class="t2"></div>
+                <div class="t3"></div>
+            </div>
+
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="./about/index.html">About</a>
+                <a href="./contact/">Contact</a>
+            </div>
+
+            <div class="functions">
+                <button onclick="toggleFullscreen()">⛶</button>
+            </div>
+        </nav>
+
+        <section class="jumbo">
+            <div class="jumbo-text">
+                <h1 class="cg">Michael Leix</h1>
+                <h1>Excellence in</h1><h1>Unique Design</h1>
+                <img src="assets/arrow.svg" alt="down arrow">
+            </div>
+            
+
+            <div class="seperator"></div>
+        </section>
+
+        <section class="projects">
+            <h1>Projects</h1>
+            <div class="gallery">
+                <a href="./webkoi/index.html">
+                    <img src="assets/thumbnails/project1.png">
+                    <div class="card-bottom">
+                        <div class="fs title">
+                            <span>Webkoi.org</span>
+                            <span>2025</span>
+                        </div>
+                        <span class="project-desc">Web-Based Fishing Game</span>
+                    </div>
+                </a>
+                <a href="./fractals/index.html">
+                    <img src="assets/thumbnails/project2.png">
+                    <div class="card-bottom">
+                        <div class="fs title">
+                            <span>Fractal Renders</span>
+                            <span>2025</span>
+                        </div>
+                        <span class="project-desc">JS Worker Rendering</span>
+                    </div>
+                </a>
+                <a href="./note-engine/index.html">
+                    <img src="assets/thumbnails/project3.png">
+                    <div class="card-bottom">
+                        <div class="fs title">
+                            <span>Note Engine</span>
+                            <span>2025</span>
+                        </div>
+                        <span class="project-desc">Markdown Text Engine</span>
+                    </div>
+                </a>
+                <a href="./blog/index.html">
+                    <img src="assets/thumbnails/project4.png">
+                    <div class="card-bottom">
+                        <div class="fs title">
+                            <span>Personal Blog</span>
+                            <span>2025</span>
+                        </div>
+                        <span class="project-desc">RSS Support</span>
+                    </div>
+                </a>
+                <a href="./automata/index.html">
+                    <img src="assets/thumbnails/project5.png">
+                    <div class="card-bottom">
+                        <div class="fs title">
+                            <span>Cell Automata</span>
+                            <span>2025</span>
+                        </div>
+                        <span class="project-desc">Live Rendering</span>
+                    </div>
+                </a>
+                <a href="./keyboard/index.html">
+                    <img src="assets/thumbnails/project6.png">
+                    <div class="card-bottom">
+                        <div class="fs title">
+                            <span>Custom Keyboard</span>
+                            <span>2025</span>
+                        </div>
+                        <span class="project-desc">DIY Firmware</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <span>Michael Leix</span>
+            <span>(385)-391-6848</span>
+            <span>Michaelleix@mail.weber.edu</span>
+        </footer>
+    </div>
 </body>
+
+<script src="index.js"></script>
 </html>
