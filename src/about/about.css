@@ -79,3 +79,77 @@ h1 {
     height: unset;
     padding-bottom: 5em;
 }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.8em;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about {
+        padding: 1em 0;
+        height: calc(100vh - 6.25em) !important;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .row img {
+        display: none;
+    }
+
+    .row p {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .about::before {
+        mask-image: linear-gradient(to bottom,
+            rgba(0,0,0,0.2) 0%,
+            rgba(0,0,0,0.2) 40%,
+            rgba(0,0,0,0.2) 60%,
+            rgba(0,0,0,0.2) 100%
+        );
+        -webkit-mask-image: linear-gradient(to bottom,
+            rgba(0,0,0,0.2) 0%,
+            rgba(0,0,0,0.2) 40%,
+            rgba(0,0,0,0.2) 60%,
+            rgba(0,0,0,0.2) 100%
+        );
+    }
+
+    .interests {
+        padding: 2em 0 3em;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .interests span {
+        font-size: 1.1em;
+        margin: 0.5em 0;
+        line-height: 1.3em;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+    }
+
+    footer span {
+        margin: 0.4em 0;
+    }
+
+    #scrollbar-container {
+        display: none;
+    }
+}

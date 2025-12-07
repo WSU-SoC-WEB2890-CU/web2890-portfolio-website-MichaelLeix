@@ -141,3 +141,70 @@ p {
     width: 80%;
     border-radius: 1em;
 }
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3em !important;
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .project-section {
+        height: calc(100vh - 4.25em) !important;
+    }
+
+    .project-section::before, .outcome::before {
+        mask-image: linear-gradient(to bottom,
+            rgba(0,0,0,0.2) 0%,
+            rgba(0,0,0,0.2) 40%,
+            rgba(0,0,0,0.2) 60%,
+            rgba(0,0,0,0.2) 100%
+        );
+        -webkit-mask-image: linear-gradient(to bottom,
+            rgba(0,0,0,0.2) 0%,
+            rgba(0,0,0,0.2) 40%,
+            rgba(0,0,0,0.2) 60%,
+            rgba(0,0,0,0.2) 100%
+        );
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 1.5rem;
+    }
+
+    .row div {
+        width: 100%;
+    }
+
+    .row img {
+        width: 90% !important;
+        max-width: 350px;
+    }
+
+    .outcome img {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .project-roles .row {
+        margin: 2rem 0;
+    }
+
+    .outcome p {
+        width: 90%;
+    }
+}
